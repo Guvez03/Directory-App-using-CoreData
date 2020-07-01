@@ -113,17 +113,17 @@
 			children = (
 				E347803224ABA23E0005F15A /* AppDelegate.swift */,
 				E347803424ABA23E0005F15A /* SceneDelegate.swift */,
-				E347803624ABA23E0005F15A /* ViewController.swift */,
 				E347803824ABA23E0005F15A /* Main.storyboard */,
+				E347803624ABA23E0005F15A /* ViewController.swift */,
+				E347806724ABA61F0005F15A /* Kisiler.swift */,
+				E347806524ABA60F0005F15A /* KisilerHucre.swift */,
 				E347806B24ABA6650005F15A /* KisiEkle.swift */,
+				E347806D24ABA6BF0005F15A /* KisiGuncelle.swift */,
 				E347806924ABA6480005F15A /* KisiDetay.swift */,
 				E347803E24ABA2410005F15A /* Assets.xcassets */,
 				E347804024ABA2410005F15A /* LaunchScreen.storyboard */,
 				E347804324ABA2410005F15A /* Info.plist */,
 				E347803B24ABA23E0005F15A /* KisilerApp.xcdatamodeld */,
-				E347806524ABA60F0005F15A /* KisilerHucre.swift */,
-				E347806724ABA61F0005F15A /* Kisiler.swift */,
-				E347806D24ABA6BF0005F15A /* KisiGuncelle.swift */,
 			);
 			path = KisilerApp;
 			sourceTree = "<group>";

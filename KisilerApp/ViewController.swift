@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     if aramaYapiliyorMu{
         aramayap(kisi_ad:aramaKelimesi!)
     }else{
-        tumKisileriAl() 
+        tumKisileriAl()
     }
     tableView.reloadData()
     }
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
              
          let  fetchRequest : NSFetchRequest<Kisidepolama> = Kisidepolama.fetchRequest()
       
-         fetchRequest.predicate = NSPredicate(format:"kisi_ad CONTAINS %@", kisi_ad.lowercased())
+         fetchRequest.predicate = NSPredicate(format:"kisiAd contains %@", kisi_ad.lowercased())
             
          do{
              self.kisilerListe = try context.fetch(fetchRequest)
@@ -83,13 +83,14 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
     
-     do{
+/* BU GÖSTERİM HATALI VERİ TABANINDAKİ VERİLERİ ÇEKİP GÖSTERİYOR SÜREKLİ VE SEARCHBARDA YAZILANI ARATMIYOR HERHANGİ BİR DÖNÜŞ SAĞLAMIYOR
+    do{
         kisilerListe = try context.fetch(Kisidepolama.fetchRequest())
 
        }catch{
            print("veri çekerken hata")
        }
-    
+    */
         
     return kisilerListe.count
 
@@ -203,5 +204,6 @@ extension  ViewController : UISearchBarDelegate{
         
     self.aramayap(kisi_ad: searchText)
     }
+        tableView.reloadData()
     }
 }
